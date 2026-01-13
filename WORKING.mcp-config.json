@@ -1,15 +1,15 @@
 {
   "mcpServers": {
-    "postgres": {
-      "command": "pg-mcp-server",
-      "args": [],
-      "env": {
-        "DATABASE_URL": "postgresql://demouser:demopass123@postgres:5432/demo"
+    "weather": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@timlukahorstmann/mcp-weather"
+      ],
+      "env":
+      {
+        "ACCUWEATHER_API_KEY": "{PASTE_YOUR_ACCUWEATHER_API_KEY_HERE}"
       }
     }
-  },
-  "ollama": {
-    "host": "http://ollama:11434",
-    "model": "llama3.2:1b"
   }
 }
