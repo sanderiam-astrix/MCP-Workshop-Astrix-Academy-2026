@@ -33,4 +33,4 @@ Two sets of MCP configuration files are provided:
 
 Each directory contains both `WORKING` and `SECRETWRAPPED` versions of the configuration files for use during different phases of the workshop.
 
-NOTE: DO NOT USE ANY OF THE DOCKER IMAGES IN A PRODUCTION SETTING. These have been built with the express purpose of demonstrating and insecure, bad state configuration. There is no data worth stealing in them right now, but if you put some there, you're asking for trouble!
+NOTE: DO NOT USE ANY OF THE DOCKER IMAGES IN A PRODUCTION SETTING. These have been built with the express purpose of demonstrating an insecure, bad state configuration. There is no data worth stealing in them right now, but if you put some there, you're asking for trouble!
