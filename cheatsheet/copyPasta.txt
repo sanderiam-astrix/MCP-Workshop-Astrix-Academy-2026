@@ -1,0 +1,13 @@
+aws ssm start-session --target <your_instance_id> --document-name AWS-StartInteractiveCommand --parameters command="cd ~ && exec bash -l"
+cd MCP-Workshop-Astrix-Academy-2026
+grep core docker-compose.yml
+docker compose start
+docker exec -it mcp-workshop-astrix-academy-2026-client-1 bash
+cd ~
+git clone https://github.com/ausboss/mcp-ollama-agent.git
+git clone https://github.com/sanderiam-astrix/MCP-Workshop-Astrix-Academy-2026.git
+cd mcp-ollama-agent/
+cp mcp-config.json ORIG.mcp-config.json
+cp ../MCP-Workshop-Astrix-Academy-2026/docker-compose-lab-mcp-config-files/WORKING.mcp-config.json mcp-config.json
+npm install
+npm start
